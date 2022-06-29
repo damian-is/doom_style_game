@@ -1,3 +1,3 @@
 # Game settings
-RES = WIDHT, HEIGHT = 1600, 900
+RES = WIDHT, HEIGHT = 1200, 600
 FPS = 60

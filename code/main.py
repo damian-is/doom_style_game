@@ -20,9 +20,17 @@ class Game:
         self.screen.fill('black')
 
     def check_events(self):
-        pass
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT or (event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE):
+                pygame.quit()
+                sys.exit()
     
     def run(self):
         while True:
+            self.check_events()
             self.update()
             self.draw()
+
+if __name__ == '__main__':
+    game = Game()
+    game.run()

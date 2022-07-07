@@ -41,6 +41,9 @@ class Player:
         if keys[pygame.K_LEFT]:
             self.angle -= PLAYER_ROT_SPEED * self.game.delta_time
 
+        if keys[pygame.K_RIGHT]:
+            self.angle += PLAYER_ROT_SPEED * self.game.delta_time
+
     def update(self):
         self.movement()
 

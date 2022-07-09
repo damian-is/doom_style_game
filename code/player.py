@@ -22,18 +22,15 @@ class Player:
         if keys[pygame.K_w]:
             dx += speed_cos
             dy += speed_sin
-
         if keys[pygame.K_s]:
             dx += -speed_cos
-            dx += -speed_sin
-
+            dy += -speed_sin
         if keys[pygame.K_a]:
             dx += speed_sin
-            dy += speed_cos
-
+            dy += -speed_cos
         if keys[pygame.K_d]:
             dx += -speed_sin
-            dy += -speed_cos
+            dy += speed_cos
 
         self.check_wall_collision(dx, dy)
 

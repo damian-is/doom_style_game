@@ -4,7 +4,7 @@ import math
 RES = WIDHT, HEIGHT = 1400, 800
 HALF_WIDHT = WIDHT // 2
 HALF_HEIGHT = HEIGHT // 2
-FPS = 60
+FPS = 0
 
 PLAYER_POS = 1.5, 5 # mini map
 PLAYER_ANGEL = 0

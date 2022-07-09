@@ -10,7 +10,7 @@ PLAYER_SPEED = 0.004
 PLAYER_ROT_SPEED = 0.002
 
 # Raycasting settings
-FOV = math.py / 3
+FOV = math.pi / 3
 HALF_FOV = FOV/2
 NUM_RAYS = WIDHT // 2
 HALF_NUM_RAYS = NUM_RAYS // 2

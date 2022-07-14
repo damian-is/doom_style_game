@@ -1,4 +1,3 @@
-from copyreg import add_extension
 import pygame
 import sys
 from settings import *

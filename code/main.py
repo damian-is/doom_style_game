@@ -21,14 +21,14 @@ class Game:
         self.player = Player(self)
         self.object_renderer = ObjectRenderer(self)
         self.raycasting = Raycasting(self)
-        self.static_sprite = SpriteObject(self)
-        self.animated_sprites = AnimatedSprite(self)
+        # self.static_sprite = SpriteObject(self)
+        # self.animated_sprites = AnimatedSprite(self)
 
     def update(self):
         self.player.update()
         self.raycasting.update()
-        self.static_sprite.update()
-        self.animated_sprites.update()
+        # self.static_sprite.update()
+        # self.animated_sprites.update()
         pygame.display.flip()
         self.delta_time = self.clock.tick(FPS)
         pygame.display.set_caption(f'{self.clock.get_fps() :.1f}')

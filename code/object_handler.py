@@ -11,6 +11,8 @@ class ObjectHandler:
         #sprite map
         add_sprite(SpriteObject(game))
         add_sprite(AnimatedSprite(game))
+        add_sprite(AnimatedSprite(game, pos=(1.5,7.5)))
+        add_sprite(AnimatedSprite(game, pos=(1.5,1.5)))
 
     def update(self):
         [sprite.update() for sprite in self.sprite_list]
